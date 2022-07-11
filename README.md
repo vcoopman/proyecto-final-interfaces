@@ -14,6 +14,6 @@ Las paginas no se refrescan cuando cambias el html de /public. Un trucazo, es po
 <meta http-equiv="refresh" content="3" />
 ```
 Eso va a hacer que se refresque la pag cada 3 sec. 
-OJO: no colocar eso en el index a menos que estes editando el index, si no se te van a refrescar todas las pag cada 3 seg. 
-No te va a gustar.
-En my_clubs.html esta comentada esa linea. Descomenta para probar.
+OJO: no colocar eso en el index a menos que estes editando el index, sino se te van a refrescar todas las pag cada 3 seg. 
+No te va a gustar my friend.
+En my_clubs.html esta comentada esa linea que refresca la pag. Descomenta para probar ;)
