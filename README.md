@@ -10,9 +10,9 @@ run: npm run watch # Esto te va a correr el server express y dejar corriendo tai
 El server esta en el 3000.
 
 Las paginas no se refrescan cuando cambias el html de /public. Un trucazo, es poder en el <head> del html esto:
-
-  <meta http-equiv="refresh" content="3" />
-  
+```
+<meta http-equiv="refresh" content="3" />
+```
 Eso va a hacer que se refresque la pag cada 3 sec. 
 OJO: no colocar eso en el index a menos que estes editando el index, si no se te van a refrescar todas las pag cada 3 seg. 
 No te va a gustar.
