@@ -3,17 +3,62 @@
 const e = React.createElement;
 
 const Cell = ({ inserting }) => {
+  const [show, setShow] = React.useState("hidden");
+  const [players, setPlayers] = React.useState(
+    Math.floor(Math.random() * 5) == 1 ? Math.floor(Math.random() * 30) : 0
+  );
   const [mark, setMark] = React.useState(false);
+
+  const handleMark = () => {
+    if (mark) {
+      setPlayers(players - 1);
+      setMark(false);
+    } else {
+      setPlayers(players + 1);
+      setMark(true);
+    }
+  };
+
+  const getRightGreen = () => {
+    if (players === 0) return "white";
+    if (players < 5) return "lightgreen";
+    if (players < 10) return "green";
+    return "darkgreen";
+  };
+
+  const getRightBgColor = () => {
+    if (inserting) return mark ? "lightgreen" : "white";
+    else return getRightGreen();
+  };
+
   return (
     <div
       style={{
         width: 40,
         height: 26,
-        backgroundColor: mark ? "green" : "white",
+        backgroundColor: getRightBgColor(),
         border: "1px solid grey",
       }}
-      onClick={() => inserting && setMark(!mark)}
-    ></div>
+      onClick={() => inserting && handleMark()}
+      onMouseEnter={() => setShow("visible")}
+      onMouseLeave={() => setShow("hidden")}
+    >
+      <div
+        style={{
+          position: "relative",
+          backgroundColor: "yellow",
+          bottom: 65,
+          right: 65,
+          width: 100,
+          height: 35,
+          border: "1px black solid",
+          textAlign: "center",
+          visibility: inserting ? "hidden" : show,
+        }}
+      >
+        {players} jugadores
+      </div>
+    </div>
   );
 };
 
