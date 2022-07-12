@@ -47,63 +47,62 @@
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
   </head>
-  <body>
-    <div id="base" class="flex flex-col items-center justify-center bg-gray-50">
+  <body class=" bg-gray-200" >
+    <div id="base" class="flex flex-col items-center justify-center bg-gray-200">
 
       <!-- Title (Rectangle) -->
-      <div id="u0" class="flex-1">
+      <div id="u0" class="p-4 flex-1">
         <div id="u0_div" class=""></div>
         <div id="u0_text" class="text ">
-          <p><div class="text-3xl font-bold underline">MIS Clubes </div></p>
+          <p><div class="text-3xl font-bold text-gray-800">Mis Clubes </div></p>
         </div>
       </div>
 
-      <!-- Filtrar Mis Clubes (Droplist) 
-      <div id="u7" class="flex-1" data-label="Filtrar Mis Clubes">
+      <!-- Filtrar Mis Clubes (Droplist) -->
+      <div id="u7" class="" data-label="Filtrar Mis Clubes">
         <div id="u7_div" class=""></div>
-        <select id="u7_input" class="u7_input">
+        <select id="u7_input" class="">
           <option class="u7_input_option" value="Reciente">Reciente</option>
           <option class="u7_input_option" value="Alfabético">Alfabético</option>
           <option class="u7_input_option" value="Fecha Ingreso">Fecha Ingreso</option>
         </select>
       </div>
-      -->
 
-    <div class="container flex mx-auto w-full items-center justify-center">
-      <ul class="flex flex-col bg-gray-50 p-4 flex-1">
+    <div class="container flex mx-auto w-full items-center justify-center mt-10">
+      <ul class="flex flex-col bg-gray-200 p-4 flex-1">
 
         <!-- Club Card (Group) -->
-        <li id="u1" class="border-gray-400 flex flex-row mb-2 flex-1" data-label="Club Card" data-left="24" data-top="130" data-width="326" data-height="117">
-          <div class="select-none cursor-pointer bg-white rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+        <li id="u1" class="border-gray-800 flex flex-row mb-4 flex-1" data-label="Club Card" data-left="24" data-top="130" data-width="326" data-height="117">
+          <div class="select-none cursor-pointer bg-gray-50 rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
             <!-- Card Background (Rectangle) -->
-            <div id="u2" class="ax_default shape" data-label="Card Background">
+            <div id="u2" class="" data-label="Card Background">
               <div id="u2_div" class=""></div>
-              <div id="u2_text" class="text " style="display:none; visibility: hidden">
+              <div id="u2_text" class="" style="display:none; visibility: hidden">
                 <p></p>
               </div>
             </div>
 
             <div class="flex-1 min-w-0">
               <!-- Card's Title (Rectangle) -->
-              <div id="u5" class="font-bold">
+              <div id="u5" class="font-bold text-2xl px-2">
                 <div id="u5_div" class=""></div>
-                <div id="u5_text" class="text ">
+                <div id="u5_text" class="">
                   <p><span>Jogo Bonito</span></p>
                 </div>
               </div>
 
               <!-- Summary (Rectangle) -->
-              <div id="u3" class="ax_default paragraph" data-label="Summary">
+              <div id="u3" class="text-gray-600 text-base pt-1 px-2" data-label="Summary">
                 <div id="u3_div" class=""></div>
-                <div id="u3_text" class="text ">
+                <div id="u3_text" class="">
                   <p><span>24 Jugadores</span></p>
                 </div>
               </div>
 
               <!-- Summary (Rectangle) -->
-              <div id="u4" class="ax_default paragraph" data-label="Summary">
+              <div id="u4" class="text-gray-600 text-base px-2" data-label="Summary">
                 <div id="u4_div" class=""></div>
-                <div id="u4_text" class="text ">
+                <div id="u4_text" class="">
                   <p><span>Sao Paulo</span></p>
                 </div>
               </div>
@@ -120,92 +119,98 @@
         </li>
 
         <!-- Club Card (Group) -->
-        <div id="u8" class="ax_default" data-label="Club Card" data-left="24" data-top="271" data-width="326" data-height="117">
+        <li id="u8" class="border-gray-800 flex flex-row mb-4 flex-1" data-label="Club Card" data-left="24" data-top="271" data-width="326" data-height="117">
+          <div class="select-none cursor-pointer bg-gray-50 rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+            <!-- Card Background (Rectangle) -->
+            <div id="u9" class="" data-label="Card Background">
+              <div id="u9_div" class=""></div>
+              <div id="u9_text" class="" style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
 
-          <!-- Card Background (Rectangle) -->
-          <div id="u9" class="ax_default shape" data-label="Card Background">
-            <div id="u9_div" class=""></div>
-            <div id="u9_text" class="text " style="display:none; visibility: hidden">
-              <p></p>
+            <div class="flex-1 min-w-0">
+              <!-- Unnamed (Rectangle) -->
+              <div id="u12" class="font-bold text-2xl px-2">
+                <div id="u12_div" class=""></div>
+                <div id="u12_text" class="">
+                  <p><span>Jogo Bonito</span></p>
+                </div>
+              </div>
+
+              <!-- Summary (Rectangle) -->
+              <div id="u10" class="text-gray-600 text-base pt-1 px-2" data-label="Summary">
+                <div id="u10_div" class=""></div>
+                <div id="u10_text" class="">
+                  <p><span>24 Jugadores</span></p>
+                </div>
+              </div>
+
+              <!-- Summary (Rectangle) -->
+              <div id="u11" class="text-gray-600 text-base px-2" data-label="Summary">
+                <div id="u11_div" class=""></div>
+                <div id="u11_text" class="">
+                  <p><span>Sao Paulo</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image (Image) -->
+            <div id="u13" class="ax_default image" data-label="Image">
+              <img id="u13_img" class="img " src="images/my_clubs/image_u6.svg"/>
+              <div id="u13_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
             </div>
           </div>
-
-          <!-- Summary (Rectangle) -->
-          <div id="u10" class="ax_default paragraph" data-label="Summary">
-            <div id="u10_div" class=""></div>
-            <div id="u10_text" class="text ">
-              <p><span>24 Jugadores</span></p>
-            </div>
-          </div>
-
-          <!-- Summary (Rectangle) -->
-          <div id="u11" class="ax_default paragraph" data-label="Summary">
-            <div id="u11_div" class=""></div>
-            <div id="u11_text" class="text ">
-              <p><span>Sao Paulo</span></p>
-            </div>
-          </div>
-
-          <!-- Unnamed (Rectangle) -->
-          <div id="u12" class="ax_default heading_2">
-            <div id="u12_div" class=""></div>
-            <div id="u12_text" class="text ">
-              <p><span>Jogo Bonito</span></p>
-            </div>
-          </div>
-
-          <!-- Image (Image) -->
-          <div id="u13" class="ax_default image" data-label="Image">
-            <img id="u13_img" class="img " src="images/my_clubs/image_u6.svg"/>
-            <div id="u13_text" class="text " style="display:none; visibility: hidden">
-              <p></p>
-            </div>
-          </div>
-        </div>
+        </li>
 
         <!-- Club Card (Group) -->
-        <div id="u14" class="ax_default" data-label="Club Card" data-left="24" data-top="412" data-width="326" data-height="117">
+        <li id="u14" class="border-gray-800 flex flex-row mb-4 flex-1" data-label="Club Card" data-left="24" data-top="412" data-width="326" data-height="117">
+          <div class="select-none cursor-pointer bg-gray-50 rounded-md flex flex-1 items-center p-4  transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-lg">
+            <!-- Card Background (Rectangle) -->
+            <div id="u15" class="" data-label="Card Background">
+              <div id="u15_div" class=""></div>
+              <div id="u15_text" class="" style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
 
-          <!-- Card Background (Rectangle) -->
-          <div id="u15" class="ax_default shape" data-label="Card Background">
-            <div id="u15_div" class=""></div>
-            <div id="u15_text" class="text " style="display:none; visibility: hidden">
-              <p></p>
+            <div class="flex-1 min-w-0">
+              <!-- Unnamed (Rectangle) -->
+              <div id="u18" class="font-bold text-2xl px-2">
+                <div id="u18_div" class=""></div>
+                <div id="u18_text" class="">
+                  <p><span>Jogo Bonito</span></p>
+                </div>
+              </div>
+
+              <!-- Summary (Rectangle) -->
+              <div id="u16" class="text-gray-600 text-base pt-1 px-2" data-label="Summary">
+                <div id="u16_div" class=""></div>
+                <div id="u16_text" class="">
+                  <p><span>24 Jugadores</span></p>
+                </div>
+              </div>
+
+              <!-- Summary (Rectangle) -->
+              <div id="u17" class="text-gray-600 text-base px-2" data-label="Summary">
+                <div id="u17_div" class=""></div>
+                <div id="u17_text" class="">
+                  <p><span>Sao Paulo</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image (Image) -->
+            <div id="u19" class="ax_default image" data-label="Image">
+              <img id="u19_img" class="img " src="images/my_clubs/image_u6.svg"/>
+              <div id="u19_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
             </div>
           </div>
-
-          <!-- Summary (Rectangle) -->
-          <div id="u16" class="ax_default paragraph" data-label="Summary">
-            <div id="u16_div" class=""></div>
-            <div id="u16_text" class="text ">
-              <p><span>24 Jugadores</span></p>
-            </div>
-          </div>
-
-          <!-- Summary (Rectangle) -->
-          <div id="u17" class="ax_default paragraph" data-label="Summary">
-            <div id="u17_div" class=""></div>
-            <div id="u17_text" class="text ">
-              <p><span>Sao Paulo</span></p>
-            </div>
-          </div>
-
-          <!-- Unnamed (Rectangle) -->
-          <div id="u18" class="ax_default heading_2">
-            <div id="u18_div" class=""></div>
-            <div id="u18_text" class="text ">
-              <p><span>Jogo Bonito</span></p>
-            </div>
-          </div>
-
-          <!-- Image (Image) -->
-          <div id="u19" class="ax_default image" data-label="Image">
-            <img id="u19_img" class="img " src="images/my_clubs/image_u6.svg"/>
-            <div id="u19_text" class="text " style="display:none; visibility: hidden">
-              <p></p>
-            </div>
-          </div>
-        </div>
+        </li>
       </ul>
     </div>
 
