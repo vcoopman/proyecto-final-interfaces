@@ -18,6 +18,9 @@
         }
     </script>
 
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
     <!--<link type="text/css" rel="Stylesheet" href="plugins/sitemap/styles/sitemap.css" />
     <link type="text/css" rel="Stylesheet" href="plugins/page_notes/styles/page_notes.css" />
     <link type="text/css" rel="Stylesheet" href="plugins/debug/styles/debug.css" />
@@ -25,6 +28,9 @@
     <link type="text/css" rel="Stylesheet" href="plugins/handoff/styles/codemirror.css" />-->
 </head>
 <body scroll="no" class="hashover" style="overflow: hidden;">
+
+    <!--<div id="like_button_container"></div>-->
+
     <div id="topPanel">
         <div id="interfaceControlFrame">
             <div id="interfaceControlFrameLeft">
@@ -147,6 +153,14 @@
 <script src="resources/scripts/player/axplayer.js"></script>
 <script src="resources/scripts/player/init.js"></script>
 
+<!-- Cargar React. -->
+<!-- Nota: cuando se despliegue, reemplazar "development.js" con "production.min.js". -->
+<script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<!-- Cargamos nuestro componente de React. -->
+<script src="scripts/like_button.js" type="text/babel"></script>
 
 </body>
 </html>
