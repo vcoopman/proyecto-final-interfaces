@@ -7,6 +7,7 @@
     <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
     <link href="data/styles.css" type="text/css" rel="stylesheet"/>
     <link href="files/club_details/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="/styles/output.css" rel="stylesheet">
     <script src="resources/scripts/jquery-3.2.1.min.js"></script>
     <script src="resources/scripts/axure/axQuery.js"></script>
     <script src="resources/scripts/axure/globals.js"></script>
@@ -45,40 +46,56 @@
       $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
     </script>
   </head>
-  <body>
-    <div id="base" class="">
+  <body class="bg-gray-200">
+    <div id="base" class="flex flex-col items-center justify-center">
 
-      <!-- Unnamed (Rectangle) -->
-      <div id="u23" class="ax_default heading_1">
-        <div id="u23_div" class=""></div>
-        <div id="u23_text" class="text ">
-          <p><span>Jogo Bonito</span></p>
+      
+      <!-- back button (Shape) -->
+      <div id="u37" class="max-w-xs hover:shadow-lg transition duration-300 ease-in-out">
+        <img id="u37_img" class="" src="images/club_details/u37.svg"/>
+        <div id="u37_text" class="" style="display:none; visibility: hidden">
+          <p></p>
         </div>
       </div>
 
-      <!-- Club Card (Group) -->
-      <div id="u24" class="ax_default" data-label="Club Card" data-left="24" data-top="73" data-width="332" data-height="81">
+        <!-- Title(Rectangle) -->
+        <div id="u23" class="">
+          <div id="u23_div" class=""></div>
+          <div id="u23_text" class="text-2xl">
+            <p><span>Jogo Bonito</span></p>
+          </div>
+        </div>
 
+        <!-- Team Image  (Image) -->
+        <div id="u36" class="" data-label="Image">
+          <img id="u36_img" class="img " src="images/club_details/image_u36.svg"/>
+          <div id="u36_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+        
+      
+
+      <!-- Boton de Partidos (Group) -->
+      <div id="u24" class="" data-label="Club Card" data-left="24" data-top="73" data-width="332" data-height="81">
         <!-- Card Background (Rectangle) -->
-        <div id="u25" class="ax_default shape" data-label="Card Background">
+        <div id="u25" class="" data-label="Card Background">
           <div id="u25_div" class=""></div>
           <div id="u25_text" class="text " style="display:none; visibility: hidden">
             <p></p>
           </div>
         </div>
-
         <!-- Unnamed (Rectangle) -->
-        <div id="u26" class="ax_default heading_2">
+        <div id="u26" class="bg-gray-50 max-w-xs hover:shadow-lg transition duration-300 ease-in-out">
           <div id="u26_div" class=""></div>
-          <div id="u26_text" class="text ">
-            <p><span>PARTIDOS</span></p>
+          <div id="u26_text" class="text">
+            <p class=""><span>PARTIDOS</span></p>
           </div>
         </div>
       </div>
 
-      <!-- Club Card (Group) -->
+      <!-- Boton de Disponibilidades (Group) -->
       <div id="u27" class="ax_default" data-label="Club Card" data-left="24" data-top="170" data-width="332" data-height="81">
-
         <!-- Card Background (Rectangle) -->
         <div id="u28" class="ax_default shape" data-label="Card Background">
           <div id="u28_div" class=""></div>
@@ -86,9 +103,8 @@
             <p></p>
           </div>
         </div>
-
         <!-- Unnamed (Rectangle) -->
-        <div id="u29" class="ax_default heading_2">
+        <div id="u29" class="bg-gray-50 max-w-xs hover:shadow-lg transition duration-300 ease-in-out">
           <div id="u29_div" class=""></div>
           <div id="u29_text" class="text ">
             <p><span>DISPONIBILIDADES</span></p>
@@ -96,9 +112,8 @@
         </div>
       </div>
 
-      <!-- Club Card (Group) -->
+      <!-- Boton de Invitar (Group) -->
       <div id="u30" class="ax_default" data-label="Club Card" data-left="24" data-top="267" data-width="332" data-height="81">
-
         <!-- Card Background (Rectangle) -->
         <div id="u31" class="ax_default shape" data-label="Card Background">
           <div id="u31_div" class=""></div>
@@ -106,9 +121,8 @@
             <p></p>
           </div>
         </div>
-
         <!-- Unnamed (Rectangle) -->
-        <div id="u32" class="ax_default heading_2">
+        <div id="u32" class="bg-gray-50 max-w-xs hover:shadow-lg transition duration-300 ease-in-out">
           <div id="u32_div" class=""></div>
           <div id="u32_text" class="text ">
             <p><span>INVITAR</span></p>
@@ -116,18 +130,17 @@
         </div>
       </div>
 
-      <!-- Matches Badge (Group) -->
+      <!-- notificacion partidos (Group)
       <div id="u33" class="ax_default" data-label="Matches Badge" data-left="337" data-top="58" data-width="32" data-height="32">
-
-        <!-- Unnamed (Ellipse) -->
+      -->
+        <!-- Unnamed (Ellipse)
         <div id="u34" class="ax_default shape">
           <img id="u34_img" class="img " src="images/club_details/u34.svg"/>
           <div id="u34_text" class="text " style="display:none; visibility: hidden">
             <p></p>
           </div>
-        </div>
-
-        <!-- Unnamed (Rectangle) -->
+        </div> -->
+        <!-- Unnamed (Rectangle) 
         <div id="u35" class="ax_default paragraph">
           <div id="u35_div" class=""></div>
           <div id="u35_text" class="text ">
@@ -135,22 +148,7 @@
           </div>
         </div>
       </div>
-
-      <!-- Image (Image) -->
-      <div id="u36" class="ax_default image" data-label="Image">
-        <img id="u36_img" class="img " src="images/club_details/image_u36.svg"/>
-        <div id="u36_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
-
-      <!-- Unnamed (Shape) -->
-      <div id="u37" class="ax_default box_3">
-        <img id="u37_img" class="img " src="images/club_details/u37.svg"/>
-        <div id="u37_text" class="text " style="display:none; visibility: hidden">
-          <p></p>
-        </div>
-      </div>
+      -->
 
       <!-- Member list (Group) -->
       <div id="u38" class="ax_default" data-label="Member list" data-left="24" data-top="400" data-width="349" data-height="624">
@@ -167,7 +165,7 @@
         <div id="u40" class="ax_default shape1">
           <div id="u40_div" class=""></div>
           <div id="u40_text" class="text ">
-            <p><span>● Alexis Sanches</span></p>
+            <p><span>⚽ Alexis Sanches</span></p>
           </div>
         </div>
 
@@ -175,7 +173,7 @@
         <div id="u41" class="ax_default shape1">
           <div id="u41_div" class=""></div>
           <div id="u41_text" class="text ">
-            <p><span>● Arturo Vidal</span></p>
+            <p><span>⚽ Arturo Vidal</span></p>
           </div>
         </div>
 
@@ -183,7 +181,7 @@
         <div id="u42" class="ax_default shape1">
           <div id="u42_div" class=""></div>
           <div id="u42_text" class="text ">
-            <p><span>● Ben Brereton</span></p>
+            <p><span>⚽ Ben Brereton</span></p>
           </div>
         </div>
 
@@ -191,7 +189,7 @@
         <div id="u43" class="ax_default shape1">
           <div id="u43_div" class=""></div>
           <div id="u43_text" class="text ">
-            <p><span>● Claudio Bravo</span></p>
+            <p><span>⚽ Claudio Bravo</span></p>
           </div>
         </div>
 
@@ -199,7 +197,7 @@
         <div id="u44" class="ax_default shape1">
           <div id="u44_div" class=""></div>
           <div id="u44_text" class="text ">
-            <p><span>● Cristian Contreras</span></p>
+            <p><span>⚽ Cristian Contreras</span></p>
           </div>
         </div>
 
@@ -207,7 +205,7 @@
         <div id="u45" class="ax_default shape1">
           <div id="u45_div" class=""></div>
           <div id="u45_text" class="text ">
-            <p><span>● Cristiano Ronaldo</span></p>
+            <p><span>⚽ Cristiano Ronaldo</span></p>
           </div>
         </div>
 
@@ -215,7 +213,7 @@
         <div id="u46" class="ax_default shape1">
           <div id="u46_div" class=""></div>
           <div id="u46_text" class="text ">
-            <p><span>● Diego Maradona</span></p>
+            <p><span>⚽ Diego Maradona</span></p>
           </div>
         </div>
 
@@ -223,7 +221,7 @@
         <div id="u47" class="ax_default shape1">
           <div id="u47_div" class=""></div>
           <div id="u47_text" class="text ">
-            <p><span>● Eduardo Vargas</span></p>
+            <p><span>⚽ Eduardo Vargas</span></p>
           </div>
         </div>
 
@@ -231,7 +229,7 @@
         <div id="u48" class="ax_default shape1">
           <div id="u48_div" class=""></div>
           <div id="u48_text" class="text ">
-            <p><span>● Gonzalo Rojas</span></p>
+            <p><span>⚽ Gonzalo Rojas</span></p>
           </div>
         </div>
 
@@ -239,7 +237,7 @@
         <div id="u49" class="ax_default shape1">
           <div id="u49_div" class=""></div>
           <div id="u49_text" class="text ">
-            <p><span>● Jorge Santos</span></p>
+            <p><span>⚽ Jorge Santos</span></p>
           </div>
         </div>
 
@@ -247,7 +245,7 @@
         <div id="u50" class="ax_default shape1">
           <div id="u50_div" class=""></div>
           <div id="u50_text" class="text ">
-            <p><span>● Lionel Messi</span></p>
+            <p><span>⚽ Lionel Messi</span></p>
           </div>
         </div>
 
@@ -255,7 +253,7 @@
         <div id="u51" class="ax_default shape1">
           <div id="u51_div" class=""></div>
           <div id="u51_text" class="text ">
-            <p><span>● Roberto Carlos</span></p>
+            <p><span>⚽ Roberto Carlos</span></p>
           </div>
         </div>
 
@@ -263,7 +261,7 @@
         <div id="u52" class="ax_default shape1">
           <div id="u52_div" class=""></div>
           <div id="u52_text" class="text ">
-            <p><span>● Vicente Coopman</span></p>
+            <p><span>⚽ Vicente Coopman</span></p>
           </div>
         </div>
 
@@ -271,7 +269,7 @@
         <div id="u53" class="ax_default shape1">
           <div id="u53_div" class=""></div>
           <div id="u53_text" class="text ">
-            <p><span>● Vinicius Junior</span></p>
+            <p><span>⚽ Vinicius Junior</span></p>
           </div>
         </div>
       </div>
@@ -281,10 +279,11 @@
         <div id="u54_div" class=""></div>
         <select id="u54_input" class="u54_input">
           <option class="u54_input_option" value="Alfabético">Alfabético</option>
-          <option class="u54_input_option" value="Reciente">Reciente</option>
-          <option class="u54_input_option" value="Fecha Ingreso">Fecha Ingreso</option>
+          <option class="u54_input_option" value="Reciente">Recientes</option>
+          <option class="u54_input_option" value="Antiguos">Más Antiguos</option>
         </select>
       </div>
+
     </div>
     <script src="resources/scripts/axure/ios.js"></script>
   </body>
